@@ -1,0 +1,26 @@
+<tr>
+    <td>
+        <input type="checkbox" class="checkbox_step">
+    </td>
+    <td>
+        1
+    </td>
+    <td>
+        <select name="keyword" class="form-control mb15">
+            <option value="{{ keyword.name }}">{{ keyword.display_name }}</option>
+        </select>
+    </td>
+    <td>
+        <input type="text" class="form-control" value="{{ case_object.name }}" readonly="readonly">
+        <input type="hidden" name="ele_id" value={{ case_object.id }}>
+    </td>
+    <td>
+        <a class="btn btn-default-alt look_element1">查看元素</a>
+    </td>
+    <td>
+        <input type="text" name="value" class="form-control" placeholder="导入用例" value="{{ case_object.name }}" readonly="readonly">
+    </td>
+    <td>
+        <input type="text" name="desc" placeholder="请输入步骤说明" class="form-control">
+    </td>
+</tr>

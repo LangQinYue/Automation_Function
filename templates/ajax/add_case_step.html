@@ -1,0 +1,28 @@
+<tr>
+    <td>
+        <input type="checkbox" class="checkbox_step">
+    </td>
+    <td>
+        1
+    </td>
+    <td>
+        <select name="keyword" class="form-control mb15">
+            {% for key in keyword %}
+                <option value="{{ key.name }}">{{ key.display_name }}</option>
+            {% endfor %}
+        </select>
+    </td>
+    <td>
+        <input type="hidden" name="ele_id" value="">
+        <a href="#select_element" class="show_element">点击选择元素</a>
+    </td>
+    <td>
+        <a class="btn btn-default-alt look_element">查看元素</a>
+    </td>
+    <td>
+        <input type="text" name="value" class="form-control" placeholder="输入值或其他内容">
+    </td>
+    <td>
+        <input type="text" name="desc" placeholder="请输入步骤说明" class="form-control">
+    </td>
+</tr>

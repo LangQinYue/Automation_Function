@@ -1,0 +1,6 @@
+2016-10-21 16:33:35,381 [Thread-193:8528] [django.request:152] [base:get_response] [WARNING]- Not Found: /add_case/
+2016-10-21 16:33:44,976 [Thread-198:14608] [django.request:152] [base:get_response] [WARNING]- Not Found: /add_case/
+2016-10-21 16:33:47,295 [Thread-203:10340] [django.request:152] [base:get_response] [WARNING]- Not Found: /add_case/
+2016-10-21 16:33:56,076 [Thread-219:3816] [django.request:152] [base:get_response] [WARNING]- Not Found: /add_case/
+2016-10-21 16:34:09,230 [Thread-265:11296] [django.request:152] [base:get_response] [WARNING]- Not Found: /add_case/
+2016-10-21 16:34:46,259 [Thread-270:2372] [django.request:152] [base:get_response] [WARNING]- Not Found: /add_case/

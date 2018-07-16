@@ -1,0 +1,2 @@
+2017-06-24 22:15:22,105 [Thread-341:12244] [autoDjango.views:62] [views:element] [ERROR]- invalid literal for int() with base 10: ''
+2017-06-24 22:15:28,378 [Thread-342:11152] [autoDjango.views:62] [views:element] [ERROR]- invalid literal for int() with base 10: ''

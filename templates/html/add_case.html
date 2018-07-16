@@ -1,0 +1,277 @@
+﻿{% load staticfiles %}
+<link href="{% static 'css/style.default.css' %}" rel="stylesheet">
+<link href="{% static 'css/jquery.gritter.css' %}" rel="stylesheet">
+<link href="{% static 'css/jquery.datatables.css' %}" rel="stylesheet">
+<script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+<script src="{% static 'js/jquery-ui-1.10.3.min.js' %}"></script>
+<script>
+    $(function () {
+        $("#sortable").sortable();
+        $("#sortable").disableSelection();
+    });
+</script> 
+
+
+<div class="row panel panel-default">
+    <form class="form-horizontal form-bordered" id="add_case_form">
+        {% csrf_token %}
+        <div class="form-group">
+            <label class="col-sm-1 control-label">用例名称</label>
+
+            <div class="col-sm-2">
+                    <input type="text" class="form-control" name="case_name">
+            </div>
+            <div class="col-sm-6">
+                <label class="col-sm-1 control-label">状态</label>
+
+                <div class="col-sm-3">
+                    <select class="form-control mb15" name="status">
+                        <option value="启用">启用</option>
+                        <option value="禁用">禁用</option>
+                    </select>
+                </div>
+                <label class="col-sm-1 control-label">性质</label>
+                <div class="col-sm-3">
+                    <select class="form-control mb15" name="nature">
+                        <option value="正用例">正用例</option>
+                        <option value="反用例">反用例</option>
+                    </select>
+                </div>
+                <label class="col-sm-1 control-label">等级</label>
+
+                <div class="col-sm-3">
+                    <select class="form-control mb15" name="level">
+                        <option value="P1">P1</option>
+                        <option value="P2">P2</option>
+                        <option value="P3">P3</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="btn-demo col-md-12">
+            <a class="btn btn-primary" id="add_step">增加步骤</a>
+            <a class="btn btn-danger" id="delete_step">删除步骤</a>
+            <a class="btn btn-default" id="import_case">导入用例</a>
+            <a class="btn btn-warning" id="sort_number">编号排序</a>
+            <input type="hidden" name="project_id" id="project_id" value="{{ pro_id }}">
+            <input type="hidden" name="action" value="{{ action }}">
+            <button type="submit" class="btn btn-success">保存用例</button>
+        </div>
+        <div class="col-md-12">
+            <div class="table-responsive">
+                <table class="table table-primary mb30">
+                    <thead>
+                    <tr>
+                        <th>
+                        </th>
+                        <th>步骤编号</th>
+                        <th>关键字</th>
+                        <th>元素名</th>
+                        <th>查看元素</th>
+                        <th>输入值</th>
+                        <th>步骤说明</th>
+                    </tr>
+                    </thead>
+                     <tbody id="sortable" name="null"> 
+                     </tbody> 
+                </table>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="modal fade bs-example-modal-photo" id="select_element" tabindex="-1" role="dialog"
+     aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-photo-viewer">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel">选取元素</h4>
+            </div>
+            <div class="modal-body">
+                <table class="table table-striped" id="select_element_table">
+                    <thead>
+                    <tr>
+                        <th>
+                        </th>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Desc</th>
+                    </tr>
+                    </thead>
+                    <tbody id="select_element_body">
+                    {% for ele in element_list %}
+                        <tr class="odd gradeX">
+                            <td>
+                                <input type="checkbox" class="checkbox select_element" name="{{ ele.id }}"
+                                       value="{{ ele.name }}">
+                            </td>
+                            <td>
+                                <a>{{ ele.id }}</a>
+                            </td>
+                            <td>
+                                <a>{{ ele.name }}</a>
+                            </td>
+                            <td>
+                                <a>{{ ele.desc }}</a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer" style="margin-top: 1%">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="use_element">Use</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade bs-example-modal-photo" id="look_element_modal" tabindex="-1" role="dialog"
+     aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-photo-viewer">
+        <form id="add_element_form">
+            {% csrf_token %}
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel">查看元素</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="control-label">元素名称</label>
+                                            <input type="text" readonly="readonly" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="control-label">元素说明</label>
+                                            <input type="text" readonly="readonly" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label class="control-label">定位方式</label>
+                                        <input type="text" readonly="readonly" class="form-control">
+                                        <br>
+                                        <input type="text" readonly="readonly" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="form-group">
+                                        <label class="control-label">定位值</label>
+                                        <input type="text" readonly="readonly" class="form-control">
+                                        <br>
+                                        <input type="text" readonly="readonly" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer" style="margin-top: 10%">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal fade bs-example-modal-photo" id="import_case_modal" tabindex="-1" role="dialog"
+     aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-photo-viewer">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel">导入用例</h4>
+            </div>
+            <div class="modal-body">
+                <table class="table table-striped" id="import_case_table">
+                    <thead>
+                    <tr>
+                        <th>
+                        </th>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Nature</th>
+                        <th>Status</th>
+                        <th>Level</th>
+                        <th>Create Time</th>
+                        <th>Update Time</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for case in import_case %}
+                        <tr class="odd gradeX">
+                            <td>
+                                <input type="checkbox" class="checkbox import_case_checkbox" name="{{ case.id }}">
+                            </td>
+                            <td>
+                                <a>{{ case.id }}</a>
+                            </td>
+                            <td>
+                                <a>{{ case.name }}</a>
+                            </td>
+                            <td>
+                                <a>{{ case.nature }}</a>
+                            </td>
+                            <td>
+                                <a>{{ case.status }}</a>
+                            </td>
+                            <td>
+                                <a>{{ case.level }}</a>
+                            </td>
+                            <td>
+                                <a>{{ case.create_at|date:'Y-m-d' }}</a>
+                            </td>
+                            <td>
+                                <a>{{ case.update_at|date:'Y-m-d' }}</a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer" style="margin-top: 10%">
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="import_case_button">导入用例
+                </button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="import_step_button">导入步骤
+                </button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+<script src="{% static 'js/jquery.datatables.min.js' %}"></script>
+<script src="{% static 'js/jquery-ui-1.10.3.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script>
+    jQuery(document).ready(function () {
+        "use strict";
+        jQuery('#select_element_table').dataTable({
+            "sPaginationType": "full_numbers"
+        });
+
+    });
+</script>
+
+<script>
+    jQuery(document).ready(function () {
+        "use strict";
+        jQuery('#import_case_table').dataTable({
+            "sPaginationType": "full_numbers"
+        });
+
+    });
+</script>

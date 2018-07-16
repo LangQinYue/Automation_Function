@@ -1,0 +1,45 @@
+<table class="table table-striped" id="import_case_table">
+    <thead>
+    <tr>
+        <th>
+        </th>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Nature</th>
+        <th>Status</th>
+        <th>Level</th>
+        <th>Create Time</th>
+        <th>Update Time</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for case in test_case_list %}
+        <tr class="odd gradeX">
+            <td>
+                <input type="checkbox" class="checkbox" name="{{ case.id }}">
+            </td>
+            <td>
+                <a>{{ case.id }}</a>
+            </td>
+            <td>
+                <a>{{ case.name }}</a>
+            </td>
+            <td>
+                <a>{{ case.nature }}</a>
+            </td>
+            <td>
+                <a>{{ case.status }}</a>
+            </td>
+            <td>
+                <a>{{ case.level }}</a>
+            </td>
+            <td>
+                <a>{{ case.create_at|date:'Y-m-d' }}</a>
+            </td>
+            <td>
+                <a>{{ case.update_at|date:'Y-m-d' }}</a>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>

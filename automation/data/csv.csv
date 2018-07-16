@@ -1,0 +1,6 @@
+case_id,summary,login_name,login_password
+case_0001,用户名为空的验证,,111111
+case_0002,密码为空的验证,admin,
+case_0003,错误的用户名验证,lidje,111111
+case_0004,错误的密码验证,admin,ddsss
+case_0005,正确的用户名、密码验证,auto_tester,123qwe

@@ -1,0 +1,101 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/png">
+
+    <title>Bracket Responsive Bootstrap3 Admin</title>
+
+    <link href="{% static 'css/style.default.css' %}" rel="stylesheet">
+    <link href="{% static 'css/jquery.gritter.css' %}" rel="stylesheet">
+</head>
+
+<body>
+
+
+<div class="panel-body">
+
+    <!-- Button trigger modal -->
+    <button class="btn btn-primary btn-lg mb10" data-toggle="modal" data-target="#myModal">
+        Launch Modal
+    </button>
+    <p>You can view more examples in using modals in <a href="modals.html">here</a></p>
+</div>
+
+<div class="modal fade bs-example-modal-photo" id="myModal" tabindex="-1" role="dialog"
+     aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-photo-viewer">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel">新增元素</h4>
+            </div>
+            <div class="modal-body">
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="control-label">元素名称</label>
+                                        <input type="text" name="firstname" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="control-label">元素说明</label>
+                                        <input type="text" name="firstname" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="panel-body">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label class="control-label">定位方式</label>
+                                    <select class="form-control mb14">
+                                        <option>ID</option>
+                                        <option>NAME</option>
+                                        <option>CLASS</option>
+                                    </select>
+                                    <br>
+                                    <select class="form-control mb14">
+                                        <option>ID</option>
+                                        <option>NAME</option>
+                                        <option>CLASS</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="form-group">
+                                    <label class="control-label">定位值</label>
+                                    <input type="text" name="firstname" class="form-control" placeholder="首选定位值">
+                                    <br>
+                                    <input type="text" name="firstname" class="form-control" placeholder="备选定位值">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer" style="margin-top: 10%">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+
+</body>
+</html>

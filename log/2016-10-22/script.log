@@ -1,0 +1,2 @@
+2016-10-22 16:05:36,288 [Thread-49:14960] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-10-22 16:05:36,385 [Thread-50:4800] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico

@@ -1,0 +1,73 @@
+{% load staticfiles %}
+<link href="{% static 'css/style.default.css' %}" rel="stylesheet">
+<link href="{% static 'css/jquery.gritter.css' %}" rel="stylesheet">
+<link href="{% static 'css/jquery.datatables.css' %}" rel="stylesheet">
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="btn-demo">
+            <a class="btn btn-success" name="{{ pro_id }}" id="add_scenario">新增套件</a>
+            <a class="btn btn-warning" name="{{ pro_id }}" id="edit_scenario">编辑套件</a>
+            <a class="btn btn-danger" id="del_scenario">删除套件</a>
+        </div>
+        <br/>
+
+        <div class="table-responsive">
+            <table class="table table-striped" id="case_scenario">
+                <thead>
+                <tr>
+                    <th>
+                    </th>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Status</th>
+                    <th>Create Time</th>
+                    <th>Update Time</th>
+                    <th>Operation</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for scen in scenario %}
+                    <tr class="odd gradeX">
+                        <td>
+                            <input type="checkbox" class="checkbox" name={{ scen.id }}>
+                        </td>
+                        <td>
+                            <a>{{ scen.id }}</a>
+                        </td>
+                        <td>
+                            <a>{{ scen.name }}</a>
+                        </td>
+                        <td>
+                            <a>{{ scen.status }}</a>
+                        </td>
+                        <td>
+                            <a>{{ scen.create_at|date:'Y-m-d' }}</a>
+                        </td>
+                        <td>
+                            <a>{{ scen.update_at|date:'Y-m-d' }}</a>
+                        </td>
+                        <td align="center">
+                            <a class="btn btn-danger action_suite" name="{{ scen.id }}">执行套件</a>
+                            <a class="btn btn-success look_case_report" name="suite-{{ scen.id }}">查看报告</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.datatables.min.js' %}"></script>
+<script>
+    jQuery(document).ready(function () {
+        "use strict";
+        jQuery('#case_scenario').dataTable({
+            "sPaginationType": "full_numbers"
+        });
+
+    });
+</script>

@@ -1,0 +1,27 @@
+{% for case in add_case_list %}
+    <tr class="odd gradeX">
+        <td>
+            <input type="checkbox" class="checkbox_case" name="{{ case.id }}">
+        </td>
+        <td>
+            <a>{{ case.id }}</a>
+            <input type="hidden" name="case_id" value={{ case.id }}>
+        </td>
+        <td>
+            <a>{{ case.name }}</a>
+        </td>
+
+        <td>
+            <a>{{ case.status }}</a>
+        </td>
+        <td>
+            <a>{{ case.level }}</a>
+        </td>
+        <td>
+            <a>{{ case.create_at|date:'Y-m-d' }}</a>
+        </td>
+        <td>
+            <a>{{ case.update_at|date:'Y-m-d' }}</a>
+        </td>
+    </tr>
+{% endfor %}

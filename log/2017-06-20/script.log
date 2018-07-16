@@ -1,0 +1,677 @@
+2017-06-20 15:00:11,707 [Thread-10:2328] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-06-20 15:00:18,752 [Thread-11:6624] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\sites.py", line 377, in login
+    return login(request, **defaults)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\views.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\debug.py", line 76, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\views.py", line 81, in login
+    if form.is_valid():
+  File "C:\Python27\lib\site-packages\django\forms\forms.py", line 169, in is_valid
+    return self.is_bound and not self.errors
+  File "C:\Python27\lib\site-packages\django\forms\forms.py", line 161, in errors
+    self.full_clean()
+  File "C:\Python27\lib\site-packages\django\forms\forms.py", line 371, in full_clean
+    self._clean_form()
+  File "C:\Python27\lib\site-packages\django\forms\forms.py", line 398, in _clean_form
+    cleaned_data = self.clean()
+  File "C:\Python27\lib\site-packages\django\contrib\auth\forms.py", line 191, in clean
+    self.user_cache = authenticate(username=username, password=password)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\__init__.py", line 74, in authenticate
+    user = backend.authenticate(**credentials)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\backends.py", line 17, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\base_user.py", line 48, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "C:\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 379, in get
+    num = len(clone)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 238, in __len__
+    self._fetch_all()
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "C:\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\sqlite3\base.py", line 337, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such table: autoDjango_myuser
+2017-06-20 15:00:42,994 [Thread-41:5976] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\views.py", line 21, in login_page
+    return HttpResponse(Realize.verify(request, request.POST))
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\realize.py", line 10, in verify
+    user = authenticate(username=query_dict["user_name"], password=query_dict["pass_word"])
+  File "C:\Python27\lib\site-packages\django\contrib\auth\__init__.py", line 74, in authenticate
+    user = backend.authenticate(**credentials)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\backends.py", line 17, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\base_user.py", line 48, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "C:\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 379, in get
+    num = len(clone)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 238, in __len__
+    self._fetch_all()
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "C:\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\sqlite3\base.py", line 337, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such table: autoDjango_myuser
+2017-06-20 15:00:46,128 [Thread-42:10160] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\views.py", line 21, in login_page
+    return HttpResponse(Realize.verify(request, request.POST))
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\realize.py", line 10, in verify
+    user = authenticate(username=query_dict["user_name"], password=query_dict["pass_word"])
+  File "C:\Python27\lib\site-packages\django\contrib\auth\__init__.py", line 74, in authenticate
+    user = backend.authenticate(**credentials)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\backends.py", line 17, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\base_user.py", line 48, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "C:\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 379, in get
+    num = len(clone)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 238, in __len__
+    self._fetch_all()
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "C:\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\sqlite3\base.py", line 337, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such table: autoDjango_myuser
+2017-06-20 15:00:46,755 [Thread-43:5624] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\views.py", line 21, in login_page
+    return HttpResponse(Realize.verify(request, request.POST))
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\realize.py", line 10, in verify
+    user = authenticate(username=query_dict["user_name"], password=query_dict["pass_word"])
+  File "C:\Python27\lib\site-packages\django\contrib\auth\__init__.py", line 74, in authenticate
+    user = backend.authenticate(**credentials)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\backends.py", line 17, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\base_user.py", line 48, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "C:\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 379, in get
+    num = len(clone)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 238, in __len__
+    self._fetch_all()
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "C:\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\sqlite3\base.py", line 337, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such table: autoDjango_myuser
+2017-06-20 15:00:46,960 [Thread-44:9980] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\views.py", line 21, in login_page
+    return HttpResponse(Realize.verify(request, request.POST))
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\realize.py", line 10, in verify
+    user = authenticate(username=query_dict["user_name"], password=query_dict["pass_word"])
+  File "C:\Python27\lib\site-packages\django\contrib\auth\__init__.py", line 74, in authenticate
+    user = backend.authenticate(**credentials)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\backends.py", line 17, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\base_user.py", line 48, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "C:\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 379, in get
+    num = len(clone)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 238, in __len__
+    self._fetch_all()
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "C:\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\sqlite3\base.py", line 337, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such table: autoDjango_myuser
+2017-06-20 15:00:47,157 [Thread-45:8080] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\views.py", line 21, in login_page
+    return HttpResponse(Realize.verify(request, request.POST))
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\realize.py", line 10, in verify
+    user = authenticate(username=query_dict["user_name"], password=query_dict["pass_word"])
+  File "C:\Python27\lib\site-packages\django\contrib\auth\__init__.py", line 74, in authenticate
+    user = backend.authenticate(**credentials)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\backends.py", line 17, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\base_user.py", line 48, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "C:\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 379, in get
+    num = len(clone)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 238, in __len__
+    self._fetch_all()
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "C:\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\sqlite3\base.py", line 337, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such table: autoDjango_myuser
+2017-06-20 15:00:47,375 [Thread-46:12776] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\views.py", line 21, in login_page
+    return HttpResponse(Realize.verify(request, request.POST))
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\realize.py", line 10, in verify
+    user = authenticate(username=query_dict["user_name"], password=query_dict["pass_word"])
+  File "C:\Python27\lib\site-packages\django\contrib\auth\__init__.py", line 74, in authenticate
+    user = backend.authenticate(**credentials)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\backends.py", line 17, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\base_user.py", line 48, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "C:\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 379, in get
+    num = len(clone)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 238, in __len__
+    self._fetch_all()
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "C:\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\sqlite3\base.py", line 337, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such table: autoDjango_myuser
+2017-06-20 15:00:47,566 [Thread-47:11384] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\views.py", line 21, in login_page
+    return HttpResponse(Realize.verify(request, request.POST))
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\realize.py", line 10, in verify
+    user = authenticate(username=query_dict["user_name"], password=query_dict["pass_word"])
+  File "C:\Python27\lib\site-packages\django\contrib\auth\__init__.py", line 74, in authenticate
+    user = backend.authenticate(**credentials)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\backends.py", line 17, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\base_user.py", line 48, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "C:\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 379, in get
+    num = len(clone)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 238, in __len__
+    self._fetch_all()
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "C:\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\sqlite3\base.py", line 337, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such table: autoDjango_myuser
+2017-06-20 15:00:47,799 [Thread-48:1796] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\views.py", line 21, in login_page
+    return HttpResponse(Realize.verify(request, request.POST))
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\realize.py", line 10, in verify
+    user = authenticate(username=query_dict["user_name"], password=query_dict["pass_word"])
+  File "C:\Python27\lib\site-packages\django\contrib\auth\__init__.py", line 74, in authenticate
+    user = backend.authenticate(**credentials)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\backends.py", line 17, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\base_user.py", line 48, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "C:\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 379, in get
+    num = len(clone)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 238, in __len__
+    self._fetch_all()
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "C:\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\sqlite3\base.py", line 337, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such table: autoDjango_myuser
+2017-06-20 15:00:50,947 [Thread-49:8092] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\views.py", line 21, in login_page
+    return HttpResponse(Realize.verify(request, request.POST))
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\realize.py", line 10, in verify
+    user = authenticate(username=query_dict["user_name"], password=query_dict["pass_word"])
+  File "C:\Python27\lib\site-packages\django\contrib\auth\__init__.py", line 74, in authenticate
+    user = backend.authenticate(**credentials)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\backends.py", line 17, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\base_user.py", line 48, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "C:\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 379, in get
+    num = len(clone)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 238, in __len__
+    self._fetch_all()
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "C:\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\sqlite3\base.py", line 337, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such table: autoDjango_myuser
+2017-06-20 15:00:54,477 [Thread-50:11360] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\views.py", line 21, in login_page
+    return HttpResponse(Realize.verify(request, request.POST))
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\realize.py", line 10, in verify
+    user = authenticate(username=query_dict["user_name"], password=query_dict["pass_word"])
+  File "C:\Python27\lib\site-packages\django\contrib\auth\__init__.py", line 74, in authenticate
+    user = backend.authenticate(**credentials)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\backends.py", line 17, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\base_user.py", line 48, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "C:\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 379, in get
+    num = len(clone)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 238, in __len__
+    self._fetch_all()
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "C:\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\sqlite3\base.py", line 337, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such table: autoDjango_myuser
+2017-06-20 15:00:55,095 [Thread-51:8632] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\views.py", line 21, in login_page
+    return HttpResponse(Realize.verify(request, request.POST))
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\realize.py", line 10, in verify
+    user = authenticate(username=query_dict["user_name"], password=query_dict["pass_word"])
+  File "C:\Python27\lib\site-packages\django\contrib\auth\__init__.py", line 74, in authenticate
+    user = backend.authenticate(**credentials)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\backends.py", line 17, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\base_user.py", line 48, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "C:\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 379, in get
+    num = len(clone)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 238, in __len__
+    self._fetch_all()
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "C:\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\sqlite3\base.py", line 337, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such table: autoDjango_myuser
+2017-06-20 15:00:55,298 [Thread-52:7588] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\views.py", line 21, in login_page
+    return HttpResponse(Realize.verify(request, request.POST))
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\realize.py", line 10, in verify
+    user = authenticate(username=query_dict["user_name"], password=query_dict["pass_word"])
+  File "C:\Python27\lib\site-packages\django\contrib\auth\__init__.py", line 74, in authenticate
+    user = backend.authenticate(**credentials)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\backends.py", line 17, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\base_user.py", line 48, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "C:\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 379, in get
+    num = len(clone)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 238, in __len__
+    self._fetch_all()
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "C:\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\sqlite3\base.py", line 337, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such table: autoDjango_myuser
+2017-06-20 15:00:55,496 [Thread-53:5232] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\views.py", line 21, in login_page
+    return HttpResponse(Realize.verify(request, request.POST))
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\realize.py", line 10, in verify
+    user = authenticate(username=query_dict["user_name"], password=query_dict["pass_word"])
+  File "C:\Python27\lib\site-packages\django\contrib\auth\__init__.py", line 74, in authenticate
+    user = backend.authenticate(**credentials)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\backends.py", line 17, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\base_user.py", line 48, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "C:\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 379, in get
+    num = len(clone)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 238, in __len__
+    self._fetch_all()
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "C:\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\sqlite3\base.py", line 337, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such table: autoDjango_myuser
+2017-06-20 15:00:55,691 [Thread-54:5540] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\views.py", line 21, in login_page
+    return HttpResponse(Realize.verify(request, request.POST))
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\realize.py", line 10, in verify
+    user = authenticate(username=query_dict["user_name"], password=query_dict["pass_word"])
+  File "C:\Python27\lib\site-packages\django\contrib\auth\__init__.py", line 74, in authenticate
+    user = backend.authenticate(**credentials)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\backends.py", line 17, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\base_user.py", line 48, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "C:\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 379, in get
+    num = len(clone)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 238, in __len__
+    self._fetch_all()
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "C:\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\sqlite3\base.py", line 337, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such table: autoDjango_myuser
+2017-06-20 15:00:55,954 [Thread-55:9484] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\views.py", line 21, in login_page
+    return HttpResponse(Realize.verify(request, request.POST))
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\realize.py", line 10, in verify
+    user = authenticate(username=query_dict["user_name"], password=query_dict["pass_word"])
+  File "C:\Python27\lib\site-packages\django\contrib\auth\__init__.py", line 74, in authenticate
+    user = backend.authenticate(**credentials)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\backends.py", line 17, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\base_user.py", line 48, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "C:\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 379, in get
+    num = len(clone)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 238, in __len__
+    self._fetch_all()
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "C:\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\sqlite3\base.py", line 337, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such table: autoDjango_myuser

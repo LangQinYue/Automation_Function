@@ -1,0 +1,144 @@
+{% load staticfiles %}
+<link href="{% static 'css/style.default.css' %}" rel="stylesheet">
+<link href="{% static 'css/jquery.gritter.css' %}" rel="stylesheet">
+<link href="{% static 'css/jquery.datatables.css' %}" rel="stylesheet">
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="btn-demo">
+            <a class="btn btn-success" id="add_element">新增元素</a>
+            <a class="btn btn-warning" id="edit_ele">编辑元素</a>
+            <a class="btn btn-danger" id="del_element">删除元素</a>
+        </div>
+        <br/>
+
+        <div class="table-responsive">
+            <table class="table table-striped" id="table2">
+                <thead>
+                <tr>
+                    <th>
+                        <input type="checkbox" class="checkbox_all">
+                    </th>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Descdescription</th>
+                    <th>Create Time</th>
+                    <th>Update Time</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for ele in element_list %}
+                    <tr class="odd gradeX">
+                        <td>
+                            <input t="element" type="checkbox"  class="checkbox" name="{{ ele.id }}">
+                        </td>
+                        <td>
+                            <a id="edi">{{ ele.id }}</a>
+                        </td>
+                        <td>
+                            <a id="edi">{{ ele.name }}</a>
+                        </td>
+                        <td class="center">
+                            <a>{{ ele.desc }}</a>
+                        </td>
+                        <td class="center">
+                            <a>{{ ele.create_at|date:'Y-m-d H:m:s' }}</a>
+                        </td>
+                        <td class="center">
+                            <a>{{ ele.update_at|date:'Y-m-d H:m:s' }}</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade bs-example-modal-photo" id="add_ele_Modal" tabindex="-1" role="dialog"
+     aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-photo-viewer">
+        <form id="add_element_form">
+        <input id="reset_form" type="reset" style="display:none;" />
+            {% csrf_token %}
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel">新增元素</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="control-label">元素名称</label>
+                                            {# 默认add_element为增加元素,如果为edit_element则为编辑 #}
+                                            <input type="hidden" name="action" id="opertion_method" value="add_element">
+                                            {# 编辑元素的时候JS复制element id #}
+                                            <input type="hidden" name="ele_id" id="ele_id">
+                                            <input type="hidden" name="pro_id" id="pro_id" value="{{ project_id }}">
+                                            <input type="text" name="ele_name" id="ele_name" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="control-label">元素说明</label>
+                                            <input type="text" name="ele_desc" id="ele_desc" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label class="control-label">定位方式</label>
+                                        <select class="form-control mb14" name="ele_method" id="first_method">
+                                            <option></option>
+                                            {% for method in method_list %}
+                                                <option value="{{ method.method }}">{{ method.display }}</option>
+                                            {% endfor %}
+                                        </select>
+                                        <br>
+                                        <select class="form-control mb14" name="ele_method" id="second_method">
+                                            <option></option>
+                                            {% for method in method_list %}
+                                                <option value="{{ method.method }}">{{ method.display }}</option>
+                                            {% endfor %}
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="form-group">
+                                        <label class="control-label">定位值</label>
+                                        <input type="text" name="ele_content" id="first_value" class="form-control" placeholder="首选定位值">
+                                        <br>
+                                        <input type="text" name="ele_content" id="second_vlaue" class="form-control" placeholder="备选定位值">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer" style="margin-top: 10%">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.datatables.min.js' %}"></script>
+<script>
+    jQuery(document).ready(function () {
+        "use strict";
+        jQuery('#table2').dataTable({
+            "sPaginationType": "full_numbers"
+        });
+
+    });
+</script>

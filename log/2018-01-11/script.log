@@ -1,0 +1,91 @@
+2018-01-11 09:30:32,405 [Thread-29:10172] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\views.py", line 21, in login_page
+    return HttpResponse(Realize.verify(request, request.POST))
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\realize.py", line 10, in verify
+    user = authenticate(username=query_dict["user_name"], password=query_dict["pass_word"])
+  File "C:\Python27\lib\site-packages\django\contrib\auth\__init__.py", line 74, in authenticate
+    user = backend.authenticate(**credentials)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\backends.py", line 17, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\base_user.py", line 48, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "C:\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 379, in get
+    num = len(clone)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 238, in __len__
+    self._fetch_all()
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "C:\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\sqlite3\base.py", line 337, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such table: autoDjango_myuser
+2018-01-11 09:30:49,755 [Thread-36:7216] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-01-11 09:34:12,288 [Thread-119:5740] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:34:13,589 [Thread-120:9116] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:34:15,025 [Thread-121:10384] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:34:15,253 [Thread-122:10592] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:34:15,476 [Thread-123:2556] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:34:15,733 [Thread-124:6340] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:34:27,469 [Thread-125:8000] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:34:27,961 [Thread-126:8032] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:34:28,901 [Thread-127:11132] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:34:29,164 [Thread-128:11052] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:34:29,359 [Thread-129:6040] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:34:29,553 [Thread-130:7568] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:34:29,750 [Thread-131:5912] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:34:33,138 [Thread-132:6920] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:34:35,398 [Thread-133:9436] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:34:36,078 [Thread-134:640] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:34:36,296 [Thread-135:5992] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:34:36,604 [Thread-136:5296] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:34:36,809 [Thread-137:5208] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:34:36,993 [Thread-138:10684] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:34:39,394 [Thread-139:10028] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:34:39,897 [Thread-140:4152] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:34:40,105 [Thread-141:5420] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:34:40,293 [Thread-142:5868] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:34:42,740 [Thread-143:7788] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:34:42,983 [Thread-144:9220] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:34:43,193 [Thread-145:11208] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:34:43,414 [Thread-146:10232] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:34:48,641 [Thread-147:4820] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:34:48,845 [Thread-148:8036] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:34:49,042 [Thread-149:7628] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:34:49,266 [Thread-150:6696] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:34:49,467 [Thread-151:5440] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:34:49,836 [Thread-152:8648] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:34:53,582 [Thread-153:11068] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:35:35,269 [Thread-178:5588] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:35:35,809 [Thread-179:10764] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:35:35,992 [Thread-180:8536] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:35:36,186 [Thread-181:5568] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:35:36,365 [Thread-182:9200] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:35:36,552 [Thread-183:6588] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:35:37,005 [Thread-184:11244] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:35:37,207 [Thread-185:7520] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:35:37,375 [Thread-186:5132] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:35:37,571 [Thread-187:2188] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:35:37,900 [Thread-188:7152] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:35:38,131 [Thread-189:5948] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:35:38,351 [Thread-190:5008] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/
+2018-01-11 09:35:38,540 [Thread-191:5528] [django.request:152] [base:get_response] [WARNING]- Not Found: /case/

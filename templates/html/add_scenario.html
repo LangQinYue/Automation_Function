@@ -1,0 +1,150 @@
+﻿{% load staticfiles %}
+<link href="{% static 'css/style.default.css' %}" rel="stylesheet">
+<link href="{% static 'css/jquery.gritter.css' %}" rel="stylesheet">
+<link href="{% static 'css/jquery.datatables.css' %}" rel="stylesheet">
+<script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+<script src="{% static 'js/jquery-ui-1.10.3.min.js' %}"></script>
+<script>
+    $(function () {
+        $("#scenario_case_body").sortable();
+        $("#scenario_case_body").disableSelection();
+    });
+</script>
+
+
+<div class="row panel panel-default">
+    <form class="form-horizontal form-bordered" id="add_scenario_form">
+        {% csrf_token %}
+        <div class="form-group">
+            <label class="col-sm-1 control-label">执行名称</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" name="scenario_name" required="required">
+            </div>
+            <div class="col-sm-6">
+                <label class="col-sm-1 control-label">状态</label>
+                <div class="col-sm-3">
+                    <select class="form-control mb15" name="scenario_status">
+                        <option value="启用">启用</option>
+                        <option value="禁用">禁用</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="btn-demo col-md-12">
+            <a class="btn btn-primary" id="add_case_scenario">增加用例</a>
+            <a class="btn btn-danger" id="delete_case_scenario">删除用例</a>
+            <input type="hidden" name="project_id" id="project_id" value="{{ pro_id }}">
+            <button type="submit" class="btn btn-success">保存套件</button>
+        </div>
+        <div class="col-md-12">
+            <div class="table-responsive">
+                <table class="table table-primary mb30">
+                    <thead>
+                    <tr>
+                        <th>
+                        </th>
+                        <th>用例ID</th>
+                        <th>用例名称</th>
+                        <th>用例状态</th>
+                        <th>用例等级</th>
+                        <th>创建时间</th>
+                        <th>更新时间</th>
+                    </tr>
+                    </thead>
+                    <tbody id="scenario_case_body" name="null">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<div class="modal fade bs-example-modal-photo" id="add_case_modal" tabindex="-1" role="dialog"
+     aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-photo-viewer">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel">增加用例</h4>
+            </div>
+            <div class="modal-body">
+                <table class="table table-striped" id="import_case_table">
+                    <thead>
+                    <tr>
+                        <th>
+                        </th>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Nature</th>
+                        <th>Status</th>
+                        <th>Level</th>
+                        <th>Create Time</th>
+                        <th>Update Time</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for case in test_case_list %}
+                        <tr class="odd gradeX">
+                            <td>
+                                <input type="checkbox" class="checkbox" name="{{ case.id }}">
+                            </td>
+                            <td>
+                                <a>{{ case.id }}</a>
+                            </td>
+                            <td>
+                                <a>{{ case.name }}</a>
+                            </td>
+                            <td>
+                                <a>{{ case.nature }}</a>
+                            </td>
+                            <td>
+                                <a>{{ case.status }}</a>
+                            </td>
+                            <td>
+                                <a>{{ case.level }}</a>
+                            </td>
+                            <td>
+                                <a>{{ case.create_at|date:'Y-m-d' }}</a>
+                            </td>
+                            <td>
+                                <a>{{ case.update_at|date:'Y-m-d' }}</a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer" style="margin-top: 10%">
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="sure_scenario">确定
+                </button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+<script src="{% static 'js/jquery.datatables.min.js' %}"></script>
+<script src="{% static 'js/jquery-ui-1.10.3.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script>
+    jQuery(document).ready(function () {
+        "use strict";
+        jQuery('#select_element_table').dataTable({
+            "sPaginationType": "full_numbers"
+        });
+
+    });
+</script>
+
+<script>
+    jQuery(document).ready(function () {
+        "use strict";
+        jQuery('#import_case_table').dataTable({
+            "sPaginationType": "full_numbers"
+        });
+
+    });
+</script>

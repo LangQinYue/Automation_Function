@@ -1,0 +1,4 @@
+2018-06-04 11:16:46,773 [Thread-31:7328] [django.request:152] [base:get_response] [WARNING]- Not Found: /index.html
+2018-06-04 11:58:28,835 [Thread-274:8232] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-06-04 11:58:28,892 [Thread-275:8484] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-06-04 11:58:28,903 [Thread-276:7416] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico

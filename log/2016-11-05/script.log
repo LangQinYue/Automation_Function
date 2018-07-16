@@ -1,0 +1,251 @@
+2016-11-05 14:45:00,941 [Thread-46:5832] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /element/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\views.py", line 98, in element
+    element_list = Project.objects.get(pk=project_id).element_set.all()
+  File "C:\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 376, in get
+    clone = self.filter(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 796, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 814, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1227, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1253, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "C:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1187, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1083, in build_lookup
+    return final_lookup(lhs, rhs)
+  File "C:\Python27\lib\site-packages\django\db\models\lookups.py", line 19, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python27\lib\site-packages\django\db\models\lookups.py", line 59, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 946, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+2016-11-05 14:45:02,510 [Thread-47:1176] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /element/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\views.py", line 98, in element
+    element_list = Project.objects.get(pk=project_id).element_set.all()
+  File "C:\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 376, in get
+    clone = self.filter(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 796, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 814, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1227, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1253, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "C:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1187, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1083, in build_lookup
+    return final_lookup(lhs, rhs)
+  File "C:\Python27\lib\site-packages\django\db\models\lookups.py", line 19, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python27\lib\site-packages\django\db\models\lookups.py", line 59, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 946, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+2016-11-05 14:45:06,115 [Thread-48:4020] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /element/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\views.py", line 98, in element
+    element_list = Project.objects.get(pk=project_id).element_set.all()
+  File "C:\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 376, in get
+    clone = self.filter(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 796, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 814, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1227, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1253, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "C:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1187, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1083, in build_lookup
+    return final_lookup(lhs, rhs)
+  File "C:\Python27\lib\site-packages\django\db\models\lookups.py", line 19, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python27\lib\site-packages\django\db\models\lookups.py", line 59, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 946, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+2016-11-05 14:45:07,914 [Thread-49:6300] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /element/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\views.py", line 98, in element
+    element_list = Project.objects.get(pk=project_id).element_set.all()
+  File "C:\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 376, in get
+    clone = self.filter(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 796, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 814, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1227, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1253, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "C:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1187, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1083, in build_lookup
+    return final_lookup(lhs, rhs)
+  File "C:\Python27\lib\site-packages\django\db\models\lookups.py", line 19, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python27\lib\site-packages\django\db\models\lookups.py", line 59, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 946, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+2016-11-05 14:45:08,150 [Thread-50:6684] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /element/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\views.py", line 98, in element
+    element_list = Project.objects.get(pk=project_id).element_set.all()
+  File "C:\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 376, in get
+    clone = self.filter(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 796, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 814, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1227, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1253, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "C:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1187, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1083, in build_lookup
+    return final_lookup(lhs, rhs)
+  File "C:\Python27\lib\site-packages\django\db\models\lookups.py", line 19, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python27\lib\site-packages\django\db\models\lookups.py", line 59, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 946, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+2016-11-05 14:45:08,352 [Thread-51:5640] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /element/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\eclipsworkdir\Automation_Platform\autoDjango\views.py", line 98, in element
+    element_list = Project.objects.get(pk=project_id).element_set.all()
+  File "C:\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 376, in get
+    clone = self.filter(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 796, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 814, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1227, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1253, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "C:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1187, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1083, in build_lookup
+    return final_lookup(lhs, rhs)
+  File "C:\Python27\lib\site-packages\django\db\models\lookups.py", line 19, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python27\lib\site-packages\django\db\models\lookups.py", line 59, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 946, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+2016-11-05 15:55:25,020 [Thread-39:3568] [django.request:152] [base:get_response] [WARNING]- Not Found: /project/
+2016-11-05 15:55:28,308 [Thread-40:5968] [django.request:152] [base:get_response] [WARNING]- Not Found: /project/
+2016-11-05 15:55:28,523 [Thread-41:8020] [django.request:152] [base:get_response] [WARNING]- Not Found: /project/
+2016-11-05 15:55:28,700 [Thread-42:6592] [django.request:152] [base:get_response] [WARNING]- Not Found: /project/
+2016-11-05 15:55:29,507 [Thread-43:7280] [django.request:152] [base:get_response] [WARNING]- Not Found: /project/
+2016-11-05 15:55:29,704 [Thread-44:5672] [django.request:152] [base:get_response] [WARNING]- Not Found: /project/
+2016-11-05 15:55:29,907 [Thread-45:3492] [django.request:152] [base:get_response] [WARNING]- Not Found: /project/
+2016-11-05 15:55:30,069 [Thread-46:7708] [django.request:152] [base:get_response] [WARNING]- Not Found: /project/
+2016-11-05 15:55:30,312 [Thread-47:2384] [django.request:152] [base:get_response] [WARNING]- Not Found: /project/
+2016-11-05 15:55:30,470 [Thread-48:7980] [django.request:152] [base:get_response] [WARNING]- Not Found: /project/
+2016-11-05 15:55:32,128 [Thread-49:7148] [django.request:152] [base:get_response] [WARNING]- Not Found: /project/
+2016-11-05 15:55:32,323 [Thread-50:8100] [django.request:152] [base:get_response] [WARNING]- Not Found: /project/
+2016-11-05 15:55:32,506 [Thread-51:2420] [django.request:152] [base:get_response] [WARNING]- Not Found: /project/
+2016-11-05 15:56:37,832 [Thread-39:7552] [django.request:152] [base:get_response] [WARNING]- Not Found: /project/
+2016-11-05 15:56:39,285 [Thread-40:5736] [django.request:152] [base:get_response] [WARNING]- Not Found: /project/
+2016-11-05 15:56:39,552 [Thread-41:6924] [django.request:152] [base:get_response] [WARNING]- Not Found: /project/
+2016-11-05 15:56:39,648 [Thread-42:6336] [django.request:152] [base:get_response] [WARNING]- Not Found: /project/
+2016-11-05 15:57:40,319 [Thread-82:7736] [django.request:152] [base:get_response] [WARNING]- Not Found: /project/
+2016-11-05 15:58:41,520 [Thread-84:7688] [django.request:152] [base:get_response] [WARNING]- Not Found: /project/
+2016-11-05 16:00:57,855 [Thread-38:7464] [django.request:152] [base:get_response] [WARNING]- Not Found: /project/
+2016-11-05 16:02:36,214 [Thread-78:7016] [django.request:152] [base:get_response] [WARNING]- Not Found: /project/
+2016-11-05 16:04:24,724 [Thread-154:5900] [django.request:152] [base:get_response] [WARNING]- Not Found: /project
+2016-11-05 16:04:26,788 [Thread-155:7964] [django.request:152] [base:get_response] [WARNING]- Not Found: /project
+2016-11-05 16:04:27,000 [Thread-156:7316] [django.request:152] [base:get_response] [WARNING]- Not Found: /project
+2016-11-05 16:04:27,174 [Thread-157:5208] [django.request:152] [base:get_response] [WARNING]- Not Found: /project
+2016-11-05 16:04:29,220 [Thread-158:7064] [django.request:152] [base:get_response] [WARNING]- Not Found: /project
+2016-11-05 16:04:37,871 [Thread-39:5588] [django.request:152] [base:get_response] [WARNING]- Not Found: /project
+2016-11-05 16:12:28,595 [Thread-106:7596] [django.request:152] [base:get_response] [WARNING]- Not Found: /project
+2016-11-05 16:12:34,720 [Thread-122:5152] [django.request:152] [base:get_response] [WARNING]- Not Found: /project
+2016-11-05 16:12:35,973 [Thread-123:7124] [django.request:152] [base:get_response] [WARNING]- Not Found: /project
+2016-11-05 16:12:36,204 [Thread-124:7316] [django.request:152] [base:get_response] [WARNING]- Not Found: /project
+2016-11-05 16:12:36,404 [Thread-125:1036] [django.request:152] [base:get_response] [WARNING]- Not Found: /project
+2016-11-05 16:12:38,016 [Thread-126:5208] [django.request:152] [base:get_response] [WARNING]- Not Found: /project
+2016-11-05 16:15:46,167 [Thread-39:6164] [django.request:152] [base:get_response] [WARNING]- Not Found: /project
+2016-11-05 16:15:47,572 [Thread-40:560] [django.request:152] [base:get_response] [WARNING]- Not Found: /project
+2016-11-05 16:15:47,828 [Thread-41:7952] [django.request:152] [base:get_response] [WARNING]- Not Found: /project
+2016-11-05 16:15:48,013 [Thread-42:7116] [django.request:152] [base:get_response] [WARNING]- Not Found: /project
+2016-11-05 16:15:49,586 [Thread-43:8044] [django.request:152] [base:get_response] [WARNING]- Not Found: /project
+2016-11-05 16:15:50,851 [Thread-44:7652] [django.request:152] [base:get_response] [WARNING]- Not Found: /project
+2016-11-05 16:36:41,165 [Thread-60:7976] [django.request:152] [base:get_response] [WARNING]- Not Found: /project
+2016-11-05 16:36:57,292 [Thread-63:7272] [django.request:152] [base:get_response] [WARNING]- Not Found: /project

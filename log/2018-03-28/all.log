@@ -1,0 +1,230 @@
+2018-03-28 16:49:09,983 [Thread-2:8288] [django.server:131] [basehttp:log_message] [INFO]- "GET /index HTTP/1.1" 301 0
+2018-03-28 16:49:10,227 [Thread-3:8292] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/ HTTP/1.1" 200 33723
+2018-03-28 16:49:16,930 [Thread-5:8300] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/css/style.default.css HTTP/1.1" 200 77743
+2018-03-28 16:49:16,934 [Thread-4:8296] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/images/photos/loggeduser.png HTTP/1.1" 200 20630
+2018-03-28 16:49:16,946 [Thread-11:8324] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/images/photos/userprofile.png HTTP/1.1" 200 23407
+2018-03-28 16:49:16,948 [Thread-7:8308] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/images/photos/user2.png HTTP/1.1" 200 18310
+2018-03-28 16:49:16,950 [Thread-9:8316] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/images/photos/user4.png HTTP/1.1" 200 18211
+2018-03-28 16:49:16,956 [Thread-6:8304] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/images/photos/user1.png HTTP/1.1" 200 17694
+2018-03-28 16:49:16,960 [Thread-8:8312] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/images/photos/user3.png HTTP/1.1" 200 17036
+2018-03-28 16:49:16,964 [Thread-10:8320] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/images/photos/user5.png HTTP/1.1" 200 17012
+2018-03-28 16:49:16,977 [Thread-13:8332] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-migrate-1.2.1.min.js HTTP/1.1" 200 7203
+2018-03-28 16:49:17,017 [Thread-12:8328] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js HTTP/1.1" 200 95789
+2018-03-28 16:49:17,084 [Thread-15:8340] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js HTTP/1.1" 200 31823
+2018-03-28 16:49:17,111 [Thread-14:8336] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-ui-1.10.3.min.js HTTP/1.1" 200 228142
+2018-03-28 16:49:17,130 [Thread-24:8400] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 109604
+2018-03-28 16:49:17,141 [Thread-25:8404] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap-override.css HTTP/1.1" 200 22777
+2018-03-28 16:49:17,176 [Thread-26:8408] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/css/weather-icons.min.css HTTP/1.1" 200 5601
+2018-03-28 16:49:17,190 [Thread-27:8412] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/css/jquery-ui-1.10.3.css HTTP/1.1" 200 18930
+2018-03-28 16:49:17,259 [Thread-17:8348] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/modernizr.min.js HTTP/1.1" 200 15157
+2018-03-28 16:49:17,276 [Thread-29:8420] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/css/animate.min.css HTTP/1.1" 200 51174
+2018-03-28 16:49:17,286 [Thread-28:8416] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/css/font-awesome.min.css HTTP/1.1" 200 20766
+2018-03-28 16:49:17,292 [Thread-30:8424] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/css/animate.delay.css HTTP/1.1" 200 11432
+2018-03-28 16:49:17,323 [Thread-31:8428] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/css/toggles.css HTTP/1.1" 200 5378
+2018-03-28 16:49:17,329 [Thread-33:8436] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/css/lato.css HTTP/1.1" 200 5575
+2018-03-28 16:49:17,341 [Thread-32:8432] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/css/select2.css HTTP/1.1" 200 18606
+2018-03-28 16:49:17,351 [Thread-16:8344] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.sparkline.min.js HTTP/1.1" 200 43251
+2018-03-28 16:49:17,361 [Thread-35:8444] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/raphael-2.1.0.min.js HTTP/1.1" 200 110942
+2018-03-28 16:49:17,371 [Thread-34:8440] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/css/roboto.css HTTP/1.1" 200 9528
+2018-03-28 16:49:17,424 [Thread-36:8448] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/custom.js HTTP/1.1" 200 11035
+2018-03-28 16:49:17,438 [Thread-37:8452] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/Hero.js HTTP/1.1" 200 16348
+2018-03-28 16:49:17,448 [Thread-19:8356] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/retina.min.js HTTP/1.1" 200 2161
+2018-03-28 16:49:17,451 [Thread-18:8352] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/toggles.min.js HTTP/1.1" 200 2736
+2018-03-28 16:49:17,461 [Thread-20:8364] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/flot/jquery.flot.min.js HTTP/1.1" 200 52970
+2018-03-28 16:49:17,467 [Thread-21:8368] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.cookies.js HTTP/1.1" 200 2033
+2018-03-28 16:49:17,512 [Thread-23:8376] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/flot/jquery.flot.spline.min.js HTTP/1.1" 200 2791
+2018-03-28 16:49:17,522 [Thread-22:8372] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/flot/jquery.flot.resize.min.js HTTP/1.1" 200 2348
+2018-03-28 16:49:17,601 [Thread-39:8460] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/fonts/fontawesome-webfont.eot? HTTP/1.1" 200 72449
+2018-03-28 16:49:17,864 [Thread-38:8456] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/images/plus-white.png HTTP/1.1" 200 966
+2018-03-28 16:49:17,874 [Thread-40:8464] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/images/icon-search.png HTTP/1.1" 200 1239
+2018-03-28 16:49:19,611 [Thread-41:8524] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/fonts/glyphicons-halflings-regular.woff HTTP/1.1" 200 23320
+2018-03-28 16:49:19,658 [Thread-42:8528] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/images/favicon.png HTTP/1.1" 200 983
+2018-03-28 16:49:22,663 [Thread-43:8540] [django.server:131] [basehttp:log_message] [INFO]- "GET /project HTTP/1.1" 301 0
+2018-03-28 16:49:22,736 [Thread-44:8544] [django.server:131] [basehttp:log_message] [INFO]- "GET /project/ HTTP/1.1" 200 1610
+2018-03-28 16:49:22,796 [Thread-45:8548] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/css/jquery.gritter.css HTTP/1.1" 200 1468
+2018-03-28 16:49:22,798 [Thread-47:8556] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js?_=1522226957457 HTTP/1.1" 200 95789
+2018-03-28 16:49:22,808 [Thread-46:8552] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/css/jquery.datatables.css HTTP/1.1" 200 4322
+2018-03-28 16:49:22,857 [Thread-48:8564] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js?_=1522226957458 HTTP/1.1" 200 31823
+2018-03-28 16:49:22,891 [Thread-49:8568] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.datatables.min.js?_=1522226957459 HTTP/1.1" 200 77503
+2018-03-28 16:49:23,072 [Thread-51:8576] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/images/sort_both.png HTTP/1.1" 200 1109
+2018-03-28 16:49:23,078 [Thread-50:8572] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/images/sort_asc.png HTTP/1.1" 200 1033
+2018-03-28 16:49:23,193 [Thread-53:8584] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/images/plus.png HTTP/1.1" 200 971
+2018-03-28 16:49:24,381 [Thread-52:8580] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js?_=1522226962847 HTTP/1.1" 200 95789
+2018-03-28 16:49:24,421 [Thread-54:8588] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js?_=1522226962848 HTTP/1.1" 200 31823
+2018-03-28 16:49:24,433 [Thread-55:8592] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.datatables.min.js?_=1522226962849 HTTP/1.1" 200 77503
+2018-03-28 16:49:32,697 [Thread-57:8632] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/images/minus.png HTTP/1.1" 200 955
+2018-03-28 16:49:33,638 [Thread-56:8628] [django.server:131] [basehttp:log_message] [INFO]- "GET /element/?pro_id=1 HTTP/1.1" 200 13987
+2018-03-28 16:49:33,683 [Thread-59:8640] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js?_=1522226964413 HTTP/1.1" 200 95789
+2018-03-28 16:49:33,697 [Thread-58:8636] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js?_=1522226964414 HTTP/1.1" 200 31823
+2018-03-28 16:49:33,709 [Thread-60:8644] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.datatables.min.js?_=1522226964415 HTTP/1.1" 200 77503
+2018-03-28 16:50:13,032 [Thread-61:8648] [django.server:131] [basehttp:log_message] [INFO]- "POST /element/ HTTP/1.1" 200 12
+2018-03-28 16:50:14,187 [Thread-62:8864] [django.server:131] [basehttp:log_message] [INFO]- "GET /element/?pro_id=1 HTTP/1.1" 200 14808
+2018-03-28 16:50:14,226 [Thread-63:8868] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js?_=1522226973693 HTTP/1.1" 200 95789
+2018-03-28 16:50:14,243 [Thread-64:8872] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js?_=1522226973694 HTTP/1.1" 200 31823
+2018-03-28 16:50:14,250 [Thread-65:8876] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.datatables.min.js?_=1522226973695 HTTP/1.1" 200 77503
+2018-03-28 16:50:16,279 [Thread-67:8888] [django.server:131] [basehttp:log_message] [INFO]- "GET /case_list/?pro_id=1 HTTP/1.1" 200 11414
+2018-03-28 16:50:16,322 [Thread-66:8884] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js?_=1522227014236 HTTP/1.1" 200 95789
+2018-03-28 16:50:16,344 [Thread-69:8896] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js?_=1522227014237 HTTP/1.1" 200 31823
+2018-03-28 16:50:16,351 [Thread-68:8892] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.datatables.min.js?_=1522227014238 HTTP/1.1" 200 77503
+2018-03-28 16:50:19,407 [Thread-70:8900] [django.server:131] [basehttp:log_message] [INFO]- "GET /add_case/?action=add_case&pro_id=1 HTTP/1.1" 200 24724
+2018-03-28 16:50:19,460 [Thread-71:8904] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js?_=1522227016334 HTTP/1.1" 200 95789
+2018-03-28 16:50:19,489 [Thread-72:8908] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-ui-1.10.3.min.js?_=1522227016335 HTTP/1.1" 200 228142
+2018-03-28 16:50:19,555 [Thread-73:8912] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js?_=1522227016336 HTTP/1.1" 200 95789
+2018-03-28 16:50:19,575 [Thread-75:8920] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.datatables.min.js?_=1522227016337 HTTP/1.1" 200 77503
+2018-03-28 16:50:19,595 [Thread-74:8916] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-ui-1.10.3.min.js?_=1522227016338 HTTP/1.1" 200 228142
+2018-03-28 16:50:19,634 [Thread-77:8928] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js?_=1522227016339 HTTP/1.1" 200 31823
+2018-03-28 16:50:28,128 [Thread-76:8924] [django.server:131] [basehttp:log_message] [INFO]- "GET /ajax_html?action=add_case_step HTTP/1.1" 301 0
+2018-03-28 16:50:28,203 [Thread-78:8948] [django.server:131] [basehttp:log_message] [INFO]- "GET /ajax_html/?action=add_case_step HTTP/1.1" 200 966
+2018-03-28 16:50:48,020 [Thread-79:8952] [django.server:131] [basehttp:log_message] [INFO]- "GET /scenario_list/?pro_id=1 HTTP/1.1" 200 5506
+2018-03-28 16:50:48,069 [Thread-81:8984] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js?_=1522227019565 HTTP/1.1" 200 95789
+2018-03-28 16:50:48,082 [Thread-80:8980] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js?_=1522227019566 HTTP/1.1" 200 31823
+2018-03-28 16:50:48,094 [Thread-82:8988] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.datatables.min.js?_=1522227019567 HTTP/1.1" 200 77503
+2018-03-28 16:51:07,664 [Thread-83:8992] [django.server:131] [basehttp:log_message] [INFO]- "GET /is_html_path?name=suite-1 HTTP/1.1" 301 0
+2018-03-28 16:51:07,674 [Thread-85:9040] [django.server:131] [basehttp:log_message] [INFO]- "GET /is_html_path/?name=suite-1 HTTP/1.1" 200 5
+2018-03-28 16:51:25,461 [Thread-84:9036] [django.server:131] [basehttp:log_message] [INFO]- "POST /scenario_list/ HTTP/1.1" 200 18
+2018-03-28 16:51:40,069 [Thread-86:5864] [django.server:131] [basehttp:log_message] [INFO]- "POST /scenario_list/ HTTP/1.1" 200 18
+2018-03-28 16:51:59,260 [Thread-87:7332] [django.server:131] [basehttp:log_message] [INFO]- "GET /element/?pro_id=1 HTTP/1.1" 200 14808
+2018-03-28 16:51:59,364 [Thread-88:9172] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js?_=1522227048078 HTTP/1.1" 200 95789
+2018-03-28 16:51:59,384 [Thread-89:9180] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js?_=1522227048079 HTTP/1.1" 200 31823
+2018-03-28 16:51:59,395 [Thread-90:9184] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.datatables.min.js?_=1522227048080 HTTP/1.1" 200 77503
+2018-03-28 16:52:10,174 [Thread-91:9188] [django.server:131] [basehttp:log_message] [INFO]- "POST /element/ HTTP/1.1" 200 12
+2018-03-28 16:52:11,086 [Thread-93:8516] [django.server:131] [basehttp:log_message] [INFO]- "GET /element/?pro_id=1 HTTP/1.1" 200 15629
+2018-03-28 16:52:11,144 [Thread-92:8572] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js?_=1522227119382 HTTP/1.1" 200 95789
+2018-03-28 16:52:11,164 [Thread-94:8612] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js?_=1522227119383 HTTP/1.1" 200 31823
+2018-03-28 16:52:11,173 [Thread-95:8596] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.datatables.min.js?_=1522227119384 HTTP/1.1" 200 77503
+2018-03-28 16:52:17,460 [Thread-97:8628] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js?_=1522227131156 HTTP/1.1" 200 95789
+2018-03-28 16:52:17,477 [Thread-96:6916] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js?_=1522227131157 HTTP/1.1" 200 31823
+2018-03-28 16:52:17,490 [Thread-99:8512] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.datatables.min.js?_=1522227131158 HTTP/1.1" 200 77503
+2018-03-28 16:52:37,984 [Thread-98:8640] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js?_=1522227137474 HTTP/1.1" 200 95789
+2018-03-28 16:52:38,002 [Thread-100:9136] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js?_=1522227137475 HTTP/1.1" 200 31823
+2018-03-28 16:52:38,009 [Thread-101:9152] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.datatables.min.js?_=1522227137476 HTTP/1.1" 200 77503
+2018-03-28 16:52:44,953 [Thread-102:9120] [django.server:131] [basehttp:log_message] [INFO]- "POST /scenario_list/ HTTP/1.1" 200 12
+2018-03-28 16:52:47,983 [Thread-103:9124] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js?_=1522227157994 HTTP/1.1" 200 95789
+2018-03-28 16:52:48,000 [Thread-105:4416] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js?_=1522227157995 HTTP/1.1" 200 31823
+2018-03-28 16:52:48,009 [Thread-104:7112] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.datatables.min.js?_=1522227157996 HTTP/1.1" 200 77503
+2018-03-28 16:52:48,819 [Thread-107:432] [django.server:131] [basehttp:log_message] [INFO]- "GET /element/?pro_id=1 HTTP/1.1" 200 15629
+2018-03-28 16:52:48,871 [Thread-106:5160] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js?_=1522227167993 HTTP/1.1" 200 95789
+2018-03-28 16:52:48,891 [Thread-109:8912] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js?_=1522227167994 HTTP/1.1" 200 31823
+2018-03-28 16:52:48,898 [Thread-108:7968] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.datatables.min.js?_=1522227167995 HTTP/1.1" 200 77503
+2018-03-28 16:53:08,436 [Thread-111:6656] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js?_=1522227168883 HTTP/1.1" 200 95789
+2018-03-28 16:53:08,453 [Thread-110:8780] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js?_=1522227168884 HTTP/1.1" 200 31823
+2018-03-28 16:53:08,464 [Thread-112:8932] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.datatables.min.js?_=1522227168885 HTTP/1.1" 200 77503
+2018-03-28 16:53:18,961 [Thread-113:7416] [django.server:131] [basehttp:log_message] [INFO]- "GET /edit_case/?id=8 HTTP/1.1" 200 34675
+2018-03-28 16:53:19,023 [Thread-114:7604] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js?_=1522227188450 HTTP/1.1" 200 95789
+2018-03-28 16:53:19,043 [Thread-115:8068] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-ui-1.10.3.min.js?_=1522227188451 HTTP/1.1" 200 228142
+2018-03-28 16:53:19,115 [Thread-116:7324] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js?_=1522227188452 HTTP/1.1" 200 95789
+2018-03-28 16:53:19,134 [Thread-117:6288] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.datatables.min.js?_=1522227188453 HTTP/1.1" 200 77503
+2018-03-28 16:53:19,150 [Thread-119:7464] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-ui-1.10.3.min.js?_=1522227188454 HTTP/1.1" 200 228142
+2018-03-28 16:53:19,193 [Thread-118:1560] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js?_=1522227188455 HTTP/1.1" 200 31823
+2018-03-28 16:55:25,170 [Thread-121:8740] [django.server:131] [basehttp:log_message] [INFO]- "GET /element/?pro_id=1 HTTP/1.1" 200 15629
+2018-03-28 16:55:25,233 [Thread-120:5876] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js?_=1522227199133 HTTP/1.1" 200 95789
+2018-03-28 16:55:25,256 [Thread-123:8508] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js?_=1522227199134 HTTP/1.1" 200 31823
+2018-03-28 16:55:25,263 [Thread-122:8492] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.datatables.min.js?_=1522227199135 HTTP/1.1" 200 77503
+2018-03-28 16:55:27,901 [Thread-125:8308] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js?_=1522227325251 HTTP/1.1" 200 95789
+2018-03-28 16:55:27,914 [Thread-124:5432] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js?_=1522227325252 HTTP/1.1" 200 31823
+2018-03-28 16:55:27,924 [Thread-126:1868] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.datatables.min.js?_=1522227325253 HTTP/1.1" 200 77503
+2018-03-28 16:55:30,045 [Thread-127:9192] [django.server:131] [basehttp:log_message] [INFO]- "GET /edit_case/?id=8 HTTP/1.1" 200 34675
+2018-03-28 16:55:30,095 [Thread-129:7456] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js?_=1522227327914 HTTP/1.1" 200 95789
+2018-03-28 16:55:30,111 [Thread-128:9200] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-ui-1.10.3.min.js?_=1522227327915 HTTP/1.1" 200 228142
+2018-03-28 16:55:30,184 [Thread-131:8456] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js?_=1522227327916 HTTP/1.1" 200 95789
+2018-03-28 16:55:30,201 [Thread-130:7140] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.datatables.min.js?_=1522227327917 HTTP/1.1" 200 77503
+2018-03-28 16:55:30,217 [Thread-132:8464] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-ui-1.10.3.min.js?_=1522227327918 HTTP/1.1" 200 228142
+2018-03-28 16:55:30,266 [Thread-133:8252] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js?_=1522227327919 HTTP/1.1" 200 31823
+2018-03-28 16:56:59,483 [Thread-134:3896] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js?_=1522227330200 HTTP/1.1" 200 95789
+2018-03-28 16:56:59,505 [Thread-135:8920] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js?_=1522227330201 HTTP/1.1" 200 31823
+2018-03-28 16:56:59,516 [Thread-136:8916] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.datatables.min.js?_=1522227330202 HTTP/1.1" 200 77503
+2018-03-28 16:57:33,947 [Thread-137:7200] [django.server:131] [basehttp:log_message] [INFO]- "GET /element/?pro_id=1 HTTP/1.1" 200 15629
+2018-03-28 16:57:34,012 [Thread-138:8616] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js?_=1522227419501 HTTP/1.1" 200 95789
+2018-03-28 16:57:34,026 [Thread-139:9184] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js?_=1522227419502 HTTP/1.1" 200 31823
+2018-03-28 16:57:34,036 [Thread-140:6708] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.datatables.min.js?_=1522227419503 HTTP/1.1" 200 77503
+2018-03-28 16:57:46,793 [Thread-141:5368] [autoDjango.views:97] [views:element] [INFO]- 删除元素表内容
+2018-03-28 16:57:46,851 [Thread-141:5368] [autoDjango.views:99] [views:element] [INFO]- 删除元素表内容
+2018-03-28 16:57:46,918 [Thread-141:5368] [autoDjango.views:97] [views:element] [INFO]- 删除元素表内容
+2018-03-28 16:57:46,976 [Thread-141:5368] [autoDjango.views:99] [views:element] [INFO]- 删除元素表内容
+2018-03-28 16:57:47,052 [Thread-141:5368] [autoDjango.views:97] [views:element] [INFO]- 删除元素表内容
+2018-03-28 16:57:47,127 [Thread-141:5368] [autoDjango.views:99] [views:element] [INFO]- 删除元素表内容
+2018-03-28 16:57:47,177 [Thread-141:5368] [autoDjango.views:97] [views:element] [INFO]- 删除元素表内容
+2018-03-28 16:57:47,252 [Thread-141:5368] [autoDjango.views:99] [views:element] [INFO]- 删除元素表内容
+2018-03-28 16:57:47,302 [Thread-141:5368] [autoDjango.views:97] [views:element] [INFO]- 删除元素表内容
+2018-03-28 16:57:47,385 [Thread-141:5368] [autoDjango.views:99] [views:element] [INFO]- 删除元素表内容
+2018-03-28 16:57:47,486 [Thread-141:5368] [autoDjango.views:97] [views:element] [INFO]- 删除元素表内容
+2018-03-28 16:57:47,552 [Thread-141:5368] [autoDjango.views:99] [views:element] [INFO]- 删除元素表内容
+2018-03-28 16:57:47,618 [Thread-141:5368] [autoDjango.views:97] [views:element] [INFO]- 删除元素表内容
+2018-03-28 16:57:47,677 [Thread-141:5368] [autoDjango.views:99] [views:element] [INFO]- 删除元素表内容
+2018-03-28 16:57:47,677 [Thread-141:5368] [django.server:131] [basehttp:log_message] [INFO]- "POST /element/ HTTP/1.1" 200 10
+2018-03-28 16:57:52,092 [Thread-143:9128] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js?_=1522227454024 HTTP/1.1" 200 95789
+2018-03-28 16:57:52,105 [Thread-142:8096] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js?_=1522227454025 HTTP/1.1" 200 31823
+2018-03-28 16:57:52,117 [Thread-144:8180] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.datatables.min.js?_=1522227454026 HTTP/1.1" 200 77503
+2018-03-28 16:58:03,084 [Thread-145:2852] [autoDjango.views:141] [views:case_list] [INFO]- 删除成功
+2018-03-28 16:58:03,084 [Thread-145:2852] [django.server:131] [basehttp:log_message] [INFO]- "POST /case_list/ HTTP/1.1" 200 12
+2018-03-28 16:58:07,016 [Thread-147:6448] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js?_=1522227472104 HTTP/1.1" 200 95789
+2018-03-28 16:58:07,039 [Thread-146:5520] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js?_=1522227472105 HTTP/1.1" 200 31823
+2018-03-28 16:58:07,049 [Thread-149:2032] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.datatables.min.js?_=1522227472106 HTTP/1.1" 200 77503
+2018-03-28 16:58:15,522 [Thread-148:2348] [autoDjango.views:165] [views:scenario_list] [INFO]- 删除失败
+2018-03-28 16:58:15,627 [Thread-148:2348] [django.server:131] [basehttp:log_message] [ERROR]- "POST /scenario_list/ HTTP/1.1" 500 17841
+2018-03-28 16:58:16,890 [Thread-151:9012] [autoDjango.views:165] [views:scenario_list] [INFO]- 删除失败
+2018-03-28 16:58:16,913 [Thread-151:9012] [django.server:131] [basehttp:log_message] [ERROR]- "POST /scenario_list/ HTTP/1.1" 500 17841
+2018-03-28 16:58:17,341 [Thread-150:1788] [autoDjango.views:165] [views:scenario_list] [INFO]- 删除失败
+2018-03-28 16:58:17,372 [Thread-150:1788] [django.server:131] [basehttp:log_message] [ERROR]- "POST /scenario_list/ HTTP/1.1" 500 17841
+2018-03-28 16:58:17,526 [Thread-153:9188] [autoDjango.views:165] [views:scenario_list] [INFO]- 删除失败
+2018-03-28 16:58:17,552 [Thread-153:9188] [django.server:131] [basehttp:log_message] [ERROR]- "POST /scenario_list/ HTTP/1.1" 500 17841
+2018-03-28 16:58:17,706 [Thread-152:9024] [autoDjango.views:165] [views:scenario_list] [INFO]- 删除失败
+2018-03-28 16:58:17,743 [Thread-152:9024] [django.server:131] [basehttp:log_message] [ERROR]- "POST /scenario_list/ HTTP/1.1" 500 17841
+2018-03-28 16:58:18,220 [Thread-155:8572] [autoDjango.views:165] [views:scenario_list] [INFO]- 删除失败
+2018-03-28 16:58:18,246 [Thread-155:8572] [django.server:131] [basehttp:log_message] [ERROR]- "POST /scenario_list/ HTTP/1.1" 500 17841
+2018-03-28 16:58:18,413 [Thread-154:8516] [autoDjango.views:165] [views:scenario_list] [INFO]- 删除失败
+2018-03-28 16:58:18,434 [Thread-154:8516] [django.server:131] [basehttp:log_message] [ERROR]- "POST /scenario_list/ HTTP/1.1" 500 17841
+2018-03-28 16:58:18,575 [Thread-156:8612] [autoDjango.views:165] [views:scenario_list] [INFO]- 删除失败
+2018-03-28 16:58:18,598 [Thread-156:8612] [django.server:131] [basehttp:log_message] [ERROR]- "POST /scenario_list/ HTTP/1.1" 500 17841
+2018-03-28 16:58:19,062 [Thread-157:8596] [autoDjango.views:165] [views:scenario_list] [INFO]- 删除失败
+2018-03-28 16:58:19,102 [Thread-157:8596] [django.server:131] [basehttp:log_message] [ERROR]- "POST /scenario_list/ HTTP/1.1" 500 17841
+2018-03-28 16:58:19,290 [Thread-159:4336] [autoDjango.views:165] [views:scenario_list] [INFO]- 删除失败
+2018-03-28 16:58:19,316 [Thread-159:4336] [django.server:131] [basehttp:log_message] [ERROR]- "POST /scenario_list/ HTTP/1.1" 500 17841
+2018-03-28 16:58:19,493 [Thread-158:8728] [autoDjango.views:165] [views:scenario_list] [INFO]- 删除失败
+2018-03-28 16:58:19,523 [Thread-158:8728] [django.server:131] [basehttp:log_message] [ERROR]- "POST /scenario_list/ HTTP/1.1" 500 17841
+2018-03-28 16:58:23,334 [Thread-160:908] [autoDjango.views:165] [views:scenario_list] [INFO]- 删除失败
+2018-03-28 16:58:23,358 [Thread-160:908] [django.server:131] [basehttp:log_message] [ERROR]- "POST /scenario_list/ HTTP/1.1" 500 17841
+2018-03-28 16:58:23,517 [Thread-161:9004] [autoDjango.views:165] [views:scenario_list] [INFO]- 删除失败
+2018-03-28 16:58:23,539 [Thread-161:9004] [django.server:131] [basehttp:log_message] [ERROR]- "POST /scenario_list/ HTTP/1.1" 500 17841
+2018-03-28 16:58:23,713 [Thread-163:8688] [autoDjango.views:165] [views:scenario_list] [INFO]- 删除失败
+2018-03-28 16:58:23,739 [Thread-163:8688] [django.server:131] [basehttp:log_message] [ERROR]- "POST /scenario_list/ HTTP/1.1" 500 17841
+2018-03-28 16:58:23,904 [Thread-162:8984] [autoDjango.views:165] [views:scenario_list] [INFO]- 删除失败
+2018-03-28 16:58:23,926 [Thread-162:8984] [django.server:131] [basehttp:log_message] [ERROR]- "POST /scenario_list/ HTTP/1.1" 500 17841
+2018-03-28 16:58:26,990 [Thread-164:8652] [django.server:131] [basehttp:log_message] [INFO]- "GET /edit_scenario?id=3&pro_id=1 HTTP/1.1" 301 0
+2018-03-28 16:58:27,094 [Thread-165:5952] [django.server:131] [basehttp:log_message] [ERROR]- "GET /edit_scenario/?id=3&pro_id=1 HTTP/1.1" 500 17998
+2018-03-28 16:58:31,377 [Thread-166:8328] [django.server:131] [basehttp:log_message] [INFO]- "GET /scenario_list/?pro_id=2 HTTP/1.1" 200 1508
+2018-03-28 16:58:31,469 [Thread-168:9100] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js?_=1522227487037 HTTP/1.1" 200 95789
+2018-03-28 16:58:31,486 [Thread-167:8580] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js?_=1522227487038 HTTP/1.1" 200 31823
+2018-03-28 16:58:31,499 [Thread-169:7340] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.datatables.min.js?_=1522227487039 HTTP/1.1" 200 77503
+2018-03-28 16:58:32,601 [Thread-170:6804] [django.server:131] [basehttp:log_message] [INFO]- "GET /case_list/?pro_id=2 HTTP/1.1" 200 1561
+2018-03-28 16:58:32,684 [Thread-172:8816] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js?_=1522227511485 HTTP/1.1" 200 95789
+2018-03-28 16:58:32,698 [Thread-171:4852] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js?_=1522227511486 HTTP/1.1" 200 31823
+2018-03-28 16:58:32,710 [Thread-173:5600] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.datatables.min.js?_=1522227511487 HTTP/1.1" 200 77503
+2018-03-28 16:58:33,622 [Thread-174:9168] [django.server:131] [basehttp:log_message] [INFO]- "GET /element/?pro_id=2 HTTP/1.1" 200 7330
+2018-03-28 16:58:33,687 [Thread-176:2684] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js?_=1522227512698 HTTP/1.1" 200 95789
+2018-03-28 16:58:33,700 [Thread-175:8412] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js?_=1522227512699 HTTP/1.1" 200 31823
+2018-03-28 16:58:33,710 [Thread-177:8640] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.datatables.min.js?_=1522227512700 HTTP/1.1" 200 77503
+2018-03-28 16:58:35,513 [Thread-178:9152] [django.server:131] [basehttp:log_message] [INFO]- "GET /scenario_list/?pro_id=3 HTTP/1.1" 200 2521
+2018-03-28 16:58:35,575 [Thread-180:2968] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js?_=1522227513699 HTTP/1.1" 200 95789
+2018-03-28 16:58:35,588 [Thread-179:8968] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js?_=1522227513700 HTTP/1.1" 200 31823
+2018-03-28 16:58:35,601 [Thread-182:9120] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.datatables.min.js?_=1522227513701 HTTP/1.1" 200 77503
+2018-03-28 16:58:36,805 [Thread-181:7700] [django.server:131] [basehttp:log_message] [INFO]- "GET /case_list/?pro_id=3 HTTP/1.1" 200 4053
+2018-03-28 16:58:36,869 [Thread-184:8560] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js?_=1522227515588 HTTP/1.1" 200 95789
+2018-03-28 16:58:36,884 [Thread-183:1392] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js?_=1522227515589 HTTP/1.1" 200 31823
+2018-03-28 16:58:36,894 [Thread-186:4416] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.datatables.min.js?_=1522227515590 HTTP/1.1" 200 77503
+2018-03-28 16:58:37,572 [Thread-185:9124] [django.server:131] [basehttp:log_message] [INFO]- "GET /element/?pro_id=3 HTTP/1.1" 200 9880
+2018-03-28 16:58:37,632 [Thread-188:7112] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js?_=1522227516882 HTTP/1.1" 200 95789
+2018-03-28 16:58:37,650 [Thread-187:8772] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js?_=1522227516883 HTTP/1.1" 200 31823
+2018-03-28 16:58:37,661 [Thread-190:5228] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.datatables.min.js?_=1522227516884 HTTP/1.1" 200 77503
+2018-03-28 16:58:38,956 [Thread-189:7404] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js?_=1522227517648 HTTP/1.1" 200 95789
+2018-03-28 16:58:38,973 [Thread-192:8056] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js?_=1522227517649 HTTP/1.1" 200 31823
+2018-03-28 16:58:38,980 [Thread-191:7608] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.datatables.min.js?_=1522227517650 HTTP/1.1" 200 77503
+2018-03-28 16:58:53,145 [Thread-193:6604] [django.server:131] [basehttp:log_message] [INFO]- "POST /scenario_list/ HTTP/1.1" 200 18
+2018-03-28 17:00:25,911 [Thread-195:9032] [django.server:131] [basehttp:log_message] [INFO]- "GET /element/?pro_id=1 HTTP/1.1" 200 9895
+2018-03-28 17:00:25,961 [Thread-196:8788] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js?_=1522227518968 HTTP/1.1" 200 95789
+2018-03-28 17:00:25,987 [Thread-197:8784] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js?_=1522227518969 HTTP/1.1" 200 31823
+2018-03-28 17:00:26,000 [Thread-198:5368] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.datatables.min.js?_=1522227518970 HTTP/1.1" 200 77503
+2018-03-28 17:00:36,868 [Thread-199:8096] [django.server:131] [basehttp:log_message] [INFO]- "GET /element/?pro_id=1 HTTP/1.1" 200 9895
+2018-03-28 17:00:36,956 [Thread-200:8180] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.11.1.min.js?_=1522227625982 HTTP/1.1" 200 95789
+2018-03-28 17:00:36,977 [Thread-201:8748] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js?_=1522227625983 HTTP/1.1" 200 31823
+2018-03-28 17:00:36,986 [Thread-202:6764] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.datatables.min.js?_=1522227625984 HTTP/1.1" 200 77503

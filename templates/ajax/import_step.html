@@ -1,0 +1,33 @@
+{% for step in import_step %}
+    <tr>
+        <td>
+            <input type="checkbox" class="checkbox_step">
+        </td>
+        <td>
+            {{ forloop.counter }}
+        </td>
+        <td>
+            <select name="keyword" class="form-control mb15">
+                <option value="{{ step.keyword }}">{{ step.key_display }}</option>
+                {% for key in key_list %}
+                    {% if key.name != 'import_case' %}
+                        <option value="{{ key.keyword }}">{{ key.display_name }}</option>
+                    {% endif %}
+                {% endfor %}
+            </select>
+        </td>
+        <td>
+            <input type="hidden" name="ele_id" value="{{ step.element }}">
+            <a href="#" class="show_element">{{ step.ele_name }}</a>
+        </td>
+        <td>
+            <a class="btn btn-default-alt look_element">查看元素</a>
+        </td>
+        <td>
+            <input type="text" name="value" class="form-control" value="{{ step.value }}">
+        </td>
+        <td>
+            <input type="text" name="desc" value="{{ step.desc }}" class="form-control">
+        </td>
+    </tr>
+{% endfor %}
